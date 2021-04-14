@@ -49,8 +49,8 @@ function draw() {
   
   score = score + Math.round(getFrameRate()/60);
   text("Score: "+ score, 500,50);
-  camera.position.x=trex.x
-  camera.position.y=trex.y
+  camera.position.x=trex.x+200
+  camera.position.y=trex.y-50
   if(keyDown("space")) {
     trex.velocityY = -10;
   }
